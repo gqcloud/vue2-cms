@@ -10,3 +10,13 @@ export const register = ({ username, password, repassword }) =>
       repassword
     }
   })
+
+export const login = ({ username, password }) =>
+  request({
+    url: "/api/login",
+    method: "post",
+    data: {
+      username,
+      password
+    }
+  })
