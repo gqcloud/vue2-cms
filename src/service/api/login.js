@@ -1,12 +1,12 @@
 import request from "../request/request"
 
-export const register = () =>
+export const register = ({ username, password, repassword }) =>
   request({
     url: "/api/reg",
     method: "post",
     data: {
-      username: "adminss",
-      password: "123456",
-      repassword: "123456"
+      username,
+      password,
+      repassword
     }
   })
