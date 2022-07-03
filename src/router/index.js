@@ -34,6 +34,13 @@ const routes = [
         path: "user-pwd",
         component: () =>
           import(/* webpackChunkName: "userPwd" */ "../views/user/userPwd.vue")
+      },
+      {
+        path: "art-cate",
+        component: () =>
+          import(
+            /* webpackChunkName: "artCate" */ "../views/article/artCate.vue"
+          )
       }
     ]
   },
