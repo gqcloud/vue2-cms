@@ -45,8 +45,8 @@ export default {
     return {
       // 登录表单的数据对象
       loginForm: {
-        username: "",
-        password: ""
+        username: "adminss",
+        password: "123123"
       },
       loginRules: {
         username: [
@@ -77,6 +77,7 @@ export default {
         if (res.data.code !== 0) return this.$message.error(res.data.message)
         this.$message.success(res.data.message)
         this.updateToken(res.data.token)
+        this.$router.push("/")
       })
     }
   }
