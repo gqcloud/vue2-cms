@@ -41,6 +41,13 @@ const routes = [
           import(
             /* webpackChunkName: "artCate" */ "../views/article/artCate.vue"
           )
+      },
+      {
+        path: "art-list",
+        component: () =>
+          import(
+            /* webpackChunkName: "artList" */ "../views/article/artList.vue"
+          )
       }
     ]
   },
